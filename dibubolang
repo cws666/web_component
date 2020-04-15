@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			/* 底部波浪 */
+			.waveHorizontals {
+				width: 100%;
+				height: 20px;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;
+				background-color: #fff !important
+			}
+
+			.ripro-dark .waveHorizontals {
+				width: 100%;
+				height: 20px;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;
+				background-color: #181616 !important
+			}
+
+			#waveHorizontal1 {
+				-webkit-mask: url(https://img.srcdict.com/SRCDICT/svg/srcdict_001.svg);
+				mask: url(https://img.srcdict.com/SRCDICT/svg/srcdict_001.svg);
+				animation-delay: -2s;
+				animation-duration: 12s;
+			}
+
+			#waveHorizontal1,
+			#waveHorizontal2,
+			#waveHorizontal3 {
+				background-image: linear-gradient(20deg, #fde300 0, #ffd001 100%) !important;
+			}
+
+			.ripro-dark #waveHorizontal1 {
+				background-color: #f1f1f1 !important;
+			}
+
+			.ripro-dark #waveHorizontal2 {
+				background-color: #f1f1f1 !important;
+			}
+
+			.ripro-dark #waveHorizontal3 {
+				background-color: #f1f1f1 !important;
+			}
+
+			.waveHorizontal {
+				width: 200%;
+				height: 100%;
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-repeat: repeat-x;
+				background-position: left bottom;
+				background-size: 350px 100%;
+				transform-origin: 0 100% 0;
+				animation-name: move;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes move {
+				0% {
+					transform: translate(-175px, 0px) scale(1, 1)
+				}
+
+				50% {
+					transform: translate(-87px, 0px) scale(1, 0.5)
+				}
+
+				100% {
+					transform: translate(0px, 0px) scale(1, 1)
+				}
+			}
+
+			#waveHorizontal2 {
+				-webkit-mask: url(https://img.srcdict.com/SRCDICT/svg/srcdict_002.svg);
+				mask: url(https://img.srcdict.com/SRCDICT/svg/srcdict_002.svg);
+				animation-delay: -2s;
+				animation-duration: 5s;
+			}
+
+			#waveHorizontal3 {
+				-webkit-mask: url(https://img.srcdict.com/SRCDICT/svg/srcdict_003.svg);
+				mask: url(https://img.srcdict.com/SRCDICT/svg/srcdict_003.svg);
+				animation-delay: -1s;
+				animation-duration: 3s;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="waveHorizontals mobile-hide">
+			<div id="waveHorizontal1" class="waveHorizontal"></div>
+			<div id="waveHorizontal2" class="waveHorizontal"></div>
+			<div id="waveHorizontal3" class="waveHorizontal"></div>
+		</div>
+	</body>
+
+</html>
